@@ -1,0 +1,138 @@
+#header{
+    background: linear-gradient(to right,rgb(5,15,130),rgb(2,6,61));
+}
+#header img{
+    width: 100px;
+    box-shadow: 10px 10px black;
+}
+#header .bi-list{
+    color: white;
+    font-size: 30px;
+}
+#header ul li a{
+    color: white;
+    transition-property: color;
+    transition-duration: 1s;
+}
+#header ul li a:hover{
+    color: red;
+}
+#header .container-fluid{
+    padding: 0px 0px;
+}
+#banner{
+    background: linear-gradient(to right,rgb(5,15,130),rgb(2,6,61));
+    padding-top: 40px;
+}
+#banner h4{
+    text-align: center;
+    color: white;
+    padding-left: 20px;
+}
+#banner p{
+    text-align: justify;
+    color: white;
+    font-family: "Archivo", sans-serif;
+}
+#banner #banner-img{
+    width: 180px;
+    border-radius: 50px;
+}
+#banner img{
+    width: 100%;
+}
+#services h2{
+    text-align: center;
+}
+#services img{
+    width: 100px;
+    border-radius: 50px;
+}
+#services p{
+    text-align: justify;
+    font-family: "Archivo", sans-serif;
+}
+#services{
+    padding-bottom: 30px;
+}
+#testi{
+    padding: 15px 15px;
+}
+#testi .card{
+    border: none;
+}
+#testi span {
+    font-size: 20px;
+    color: black;
+}
+#testi p{
+    text-align: justify;
+    font-family: "Archivo", sans-serif;   
+}
+#testi h2{
+    text-align: center;
+    font-family: "Bitter", serif;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+}
+#testi h5{
+    text-align: center;
+}
+#testi img{
+    width: 100px;
+    border-radius: 0px;
+}
+#profiles{
+    padding: 15px 15px;
+    
+}
+#profiles img{
+    width: 100px;
+}
+#profiles h5{
+    text-align: center;
+}
+#profiles p{
+    text-align: center;
+    font-family: "Archivo", sans-serif;  
+}
+#profiles .card{
+    margin-right: 10px;
+}
+#profiles h2{
+    text-align: center;
+    font-family: "Bitter", serif;
+    
+}
+#footer #border-img{
+    width: 100%;
+}
+
+#footer #footer-logo{
+    width: 100px;
+}
+#footer{
+    background:linear-gradient(to right,rgb(5,15,130),rgb(2,6,61));
+    padding-bottom: 15px;
+}
+#footer img{
+    width: 60px;
+    margin-bottom: 30px;
+}
+#footer p{
+    color:white;
+    text-align: justify;
+    font-family: "Archivo", sans-serif;
+}
+#footer h2{
+    color: white;
+    font-family: "Bitter", serif;
+}
+#footer table tr{
+    color: white;
+    display: flex;
+}
+#footer table tr td i{
+    font-size: 20px;
+    margin-right: 5px;
+}

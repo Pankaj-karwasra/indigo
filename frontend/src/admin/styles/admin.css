@@ -1,0 +1,19 @@
+.admin-dashboard {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+
+.admin-content {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.sidebar a {
+  text-decoration: none;
+  padding: 8px 0;
+  display: block;
+}
+.sidebar a:hover {
+  background-color: #495057;
+  border-radius: 4px;
+}

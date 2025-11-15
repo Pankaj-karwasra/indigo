@@ -1,0 +1,93 @@
+# ============================================
+# ENVIRONMENT VARIABLES
+# ============================================
+.env
+env
+*.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ============================================
+# DJANGO / PYTHON
+# ============================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+.myenv/
+
+# SQLite database — NEVER COMMIT
+db.sqlite3
+*.sqlite3
+
+# Django static & media (generated)
+staticfiles/
+static/
+media/
+
+# ============================================
+# NODE / REACT (Your original content + more)
+# ============================================
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node modules
+node_modules/
+
+# React/Vite/Next/Nuxt build output
+dist/
+dist-ssr/
+build/
+.out/
+.next/
+.nuxt/
+
+# Local config
+*.local
+
+# Cache folders
+*.cache/
+.parcel-cache/
+.vite/
+
+# ESLint cache
+.eslintcache
+
+# PnP (Yarn)
+.pnp/
+.pnp.js/
+
+# ============================================
+# DOCKER
+# ============================================
+docker-data/
+docker-compose.override.yml
+*.pid
+
+# ============================================
+# OS / EDITOR FILES
+# ============================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
