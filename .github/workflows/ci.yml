@@ -75,6 +75,10 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
+      # Create lowercase repo owner for GHCR
+      - name: Set lowercase owner
+        run: echo "OWNER_LC=${GITHUB_REPOSITORY_OWNER,,}" >> $GITHUB_ENV
+
       # Login to GitHub Container Registry
       - name: Login to GHCR
         uses: docker/login-action@v2
@@ -86,20 +90,20 @@ jobs:
       # Build & Push Backend Image
       - name: Build & Push Backend Image
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner | toLower }}/indigo-backend:latest \
+          docker build -t ghcr.io/${{ env.OWNER_LC }}/indigo-backend:latest \
             -f ./backend/backend/Dockerfile \
             ./backend/backend
 
-          docker push ghcr.io/${{ github.repository_owner | toLower }}/indigo-backend:latest
+          docker push ghcr.io/${{ env.OWNER_LC }}/indigo-backend:latest
 
       # Build & Push Frontend Image
       - name: Build & Push Frontend Image
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner | toLower }}/indigo-frontend:latest \
+          docker build -t ghcr.io/${{ env.OWNER_LC }}/indigo-frontend:latest \
             -f ./frontend/Dockerfile \
             ./frontend
 
-          docker push ghcr.io/${{ github.repository_owner | toLower }}/indigo-frontend:latest
+          docker push ghcr.io/${{ env.OWNER_LC }}/indigo-frontend:latest
 
       - name: Show Docker Images
         run: docker images
