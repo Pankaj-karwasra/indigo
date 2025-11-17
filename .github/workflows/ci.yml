@@ -86,20 +86,20 @@ jobs:
       # Build & Push Backend Image
       - name: Build & Push Backend Image
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/indigo-backend:latest \
+          docker build -t ghcr.io/${{ github.repository_owner | toLower }}/indigo-backend:latest \
             -f ./backend/backend/Dockerfile \
             ./backend/backend
 
-          docker push ghcr.io/${{ github.repository_owner }}/indigo-backend:latest
+          docker push ghcr.io/${{ github.repository_owner | toLower }}/indigo-backend:latest
 
       # Build & Push Frontend Image
       - name: Build & Push Frontend Image
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/indigo-frontend:latest \
+          docker build -t ghcr.io/${{ github.repository_owner | toLower }}/indigo-frontend:latest \
             -f ./frontend/Dockerfile \
             ./frontend
 
-          docker push ghcr.io/${{ github.repository_owner }}/indigo-frontend:latest
+          docker push ghcr.io/${{ github.repository_owner | toLower }}/indigo-frontend:latest
 
       - name: Show Docker Images
         run: docker images
