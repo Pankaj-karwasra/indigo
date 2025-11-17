@@ -25,12 +25,12 @@ jobs:
           python-version: "3.11"
 
       - name: Install Backend Dependencies
-        working-directory: ./backend
+        working-directory: ./backend/backend
         run: |
           pip install -r requirements.txt
 
       - name: Run Django Tests
-        working-directory: ./backend
+        working-directory: ./backend/backend
         run: |
           python manage.py test
 
